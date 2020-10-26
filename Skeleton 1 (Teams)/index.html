@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/team.css">
+  <link rel="stylesheet" type="text/css" href="css/details.css">
+  <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <!-- JQuerry CDN must be before Bootstrap -->
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap dependency import -->
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- Handlebars dependency import -->
+  <script src="../node_modules/handlebars/dist/handlebars.min.js"></script>
+  <!-- SammyJS dependency import -->
+  <script src="../node_modules/sammy/lib/min/sammy-0.7.6.min.js"></script>
+  <!-- SammyJS Haldlebars Plugin dependency import -->
+  <script src="../node_modules/sammy/lib/min/plugins/sammy.handlebars-0.7.6.min.js"></script>
+  <!-- Firebase Auth Library -->
+  <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+  <!-- Additional Firebase Auth Library -->
+  <script defer src="https://www.gstatic.com/firebasejs/7.13.2/firebase-auth.js"></script>
+  <!-- Firebase Configs & Initialisation Script -->
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyC7BI-QwgJ1pKEXxZec4TS0wb7HNLHCaV4",
+      authDomain: "routingapp-24985.firebaseapp.com",
+      databaseURL: "https://routingapp-24985.firebaseio.com",
+      projectId: "routingapp-24985",
+      storageBucket: "routingapp-24985.appspot.com",
+      messagingSenderId: "422623165761",
+      appId: "1:422623165761:web:4c30f2dd7e1e08fda7b5c0"
+    };
+    // Initialize Firebase
+    
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <script type="module" src="scripts/app.js"></script>
+  <title>Team Managers App</title>
+</head>
+
+<body>
+  <div id="infoBox" class="notification" disabled></div>
+  <div id="errorBox" class="notification" disabled></div>
+  <div id="main">
+
+  </div>
+</body>
+
+</html>
